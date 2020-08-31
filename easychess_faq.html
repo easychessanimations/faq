@@ -2,6 +2,16 @@
   p {font-weight:bold; font-size:20px;}
 </style>
 
+<p>Does easychess work across different devices</p>
+
+Easychess stores its settings / date locally in localStorage and indexedDB respectively, so settings are device specific.<br>
+
+However in Analyze / Backup you can either<br>
+
+- copy the application state to clipboard ( Show ) then paste this blob into the text area to retrieve the state<br>
+
+- save the application state to a file ( Backup local ) then drag and drop the file into the text area to retrieve the state
+
 <p>What engine does easychess use?</p>
 
 Easychess uses single threaded Stockfish WASM for a bot engine. You cannot expect it to be upgraded to latest Stockfish, because the goal is not performance. For perforamnce install lichess-bot and use a native engine.
